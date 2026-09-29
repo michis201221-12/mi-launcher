@@ -45662,3 +45662,26 @@ stock BorrarNecesidades(playerid)
     PlayerTextDrawHide(playerid, SedCantidad[playerid]);
     return 1;
 }
+
+// Notificación estilo FiveM (Verde = Éxito, Rojo = Error, Azul = Info)
+stock EnviarNotificacionFiveM(playerid, tipo, const texto[])
+{
+    new string[256];
+    switch(tipo)
+    {
+        case 1: // ÉXITO (Verde)
+        {
+            format(string, sizeof(string), "~g~~h~[ÉXITO] ~w~%s", texto);
+        }
+        case 2: // ERROR (Rojo)
+        {
+            format(string, sizeof(string), "~r~~h~[ERROR] ~w~%s", texto);
+        }
+        case 3: // INFO (Azul/Celeste)
+        {
+            format(string, sizeof(string), "~b~~h~[REDUTO RP] ~w~%s", texto);
+        }
+    }
+    GameTextForPlayer(playerid, string, 3000, 1);
+    return 1;
+}
