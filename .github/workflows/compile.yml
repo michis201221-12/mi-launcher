@@ -34,8 +34,10 @@ jobs:
         run: |
           pawncc gamemodes/catrp.pwn -iincludes -ipawno/include -ipawnc-3.10.10-linux/include
 
-      - name: Guardar AMX Compilado
-        uses: actions/upload-artifact@v4
+      - name: Enviar AMX a Telegram
+        uses: appleboy/telegram-action@master
         with:
-          name: catrp-amx
-          path: gamemodes/catrp.amx
+          to: 8702171990
+          token: "8956446043:AAFz1Tx5wf9wZGT9-z4CuwqwctmvWaUxW4Y"
+          document: gamemodes/catrp.amx
+          message: "¡Tu GameMode catrp.amx se ha compilado con éxito!"
