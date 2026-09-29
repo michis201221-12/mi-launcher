@@ -25,10 +25,13 @@ jobs:
           wget https://github.com/pawn-lang/compiler/releases/download/v3.10.10/pawnc-3.10.10-linux.tar.gz
           tar -xzf pawnc-3.10.10-linux.tar.gz
           cp pawnc-3.10.10-linux/bin/pawncc pawno/pawncc
+          cp pawnc-3.10.10-linux/lib/libpawnc.so pawno/libpawnc.so
+          sudo cp pawnc-3.10.10-linux/lib/libpawnc.so /usr/lib/ 2>/dev/null || true
           chmod +x pawno/pawncc
 
       - name: Compilar catrp.pwn
         run: |
+          export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(pwd)/pawno
           ./pawno/pawncc gamemodes/catrp.pwn -iincludes -ipawno/include -o"gamemodes/catrp.amx"
 
       - name: Guardar AMX Compilado
