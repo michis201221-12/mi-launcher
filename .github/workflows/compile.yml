@@ -20,9 +20,15 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libc6:i386 libstdc++6:i386
 
+      - name: Descargar Compilador Pawn (Linux)
+        run: |
+          wget https://github.com/pawn-lang/compiler/releases/download/v3.10.10/pawnc-3.10.10-linux.tar.gz
+          tar -xzf pawnc-3.10.10-linux.tar.gz
+          cp pawnc-3.10.10-linux/bin/pawncc pawno/pawncc
+          chmod +x pawno/pawncc
+
       - name: Compilar catrp.pwn
         run: |
-          chmod +x pawno/pawncc
           ./pawno/pawncc gamemodes/catrp.pwn -iincludes -ipawno/include -o"gamemodes/catrp.amx" -; -(${
 
       - name: Guardar AMX Compilado
