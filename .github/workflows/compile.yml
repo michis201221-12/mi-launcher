@@ -14,26 +14,24 @@ jobs:
       - name: Descargar Código
         uses: actions/checkout@v4
 
-      - name: Configurar Arquitectura i386
+      - name: Configurar Arquitectura i386 y Dependencias
         run: |
           sudo dpkg --add-architecture i386
           sudo apt-get update
           sudo apt-get install -y libc6:i386 libstdc++6:i386 lib32z1 wget
 
-      - name: Instalar Compilador Pawn y Librerías 32-bits
+      - name: Instalar Compilador Pawn
         run: |
           wget https://github.com/pawn-lang/compiler/releases/download/v3.10.10/pawnc-3.10.10-linux.tar.gz
           tar -xzf pawnc-3.10.10-linux.tar.gz
+          mkdir -p pawno
           cp pawnc-3.10.10-linux/bin/pawncc pawno/pawncc
           cp pawnc-3.10.10-linux/lib/libpawnc.so pawno/libpawnc.so
-          sudo cp pawnc-3.10.10-linux/lib/libpawnc.so /usr/lib/i386-linux-gnu/
-          sudo cp pawnc-3.10.10-linux/lib/libpawnc.so /lib/i386-linux-gnu/
           chmod +x pawno/pawncc
-          sudo ldconfig
 
       - name: Compilar catrp.pwn
         run: |
-          ./pawno/pawncc gamemodes/catrp.pwn -iincludes -ipawno/include -o"gamemodes/catrp.amx"
+          LD_LIBRARY_PATH=$(pwd)/pawno ./pawno/pawncc gamemodes/catrp.pwn -iincludes -ipawno/include -o"gamemodes/catrp.amx"
 
       - name: Guardar AMX Compilado
         uses: actions/upload-artifact@v4
