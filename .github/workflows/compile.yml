@@ -32,7 +32,7 @@ jobs:
 
       - name: Compilar catrp.pwn
         run: |
-          pawncc gamemodes/catrp.pwn -iincludes -ipawno/include -ipawnc-3.10.10-linux/include -o"gamemodes/catrp.amx" -d3
+          pawncc gamemodes/catrp.pwn -iincludes -ipawno/include -ogamemodes/catrp.amx -d3
 
       - name: Guardar AMX Compilado
         uses: actions/upload-artifact@v4
