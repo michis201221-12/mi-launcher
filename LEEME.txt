@@ -1,0 +1,10 @@
+/alogin (Ponerse en servicio administrativo)
+/reiniciarsv (reboot)
+/actualizarsv (Update
+/guardarservidor (Save server)
+/acmds (Comandos administrativos)
+/daradmin (ceder admin)
+/adminrcon (Para darte admin solo si estas logueado con rcon)
+para cambiar la rcon debes de ir a la linea 16309 
+la rcon por defecto es ^mqO&%J0S!wclSrb3Js%fVQsAfesYQzaAYKAMVWq%C&7FqqHIW
+para generar contraseñas rcon, te recomiendo usar > https://www.lastpass.com/es/features/password-generator

@@ -1,0 +1,32 @@
+name: Compilar GameMode SA-MP
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar Código
+        uses: actions/checkout@v3
+
+      - name: Configurar Arquitectura i386
+        run: |
+          sudo dpkg --add-architecture i386
+          sudo apt-get update
+          sudo apt-get install -y libc6:i386 libstdc++6:i386
+
+      - name: Compilar catrp.pwn
+        run: |
+          chmod +x pawno/pawncc
+          ./pawno/pawncc gamemodes/catrp.pwn -iincludes -ipawno/include -o"gamemodes/catrp.amx" -; -(${
+
+      - name: Guardar AMX Compilado
+        uses: actions/upload-artifact@v3
+        with:
+          name: catrp-amx
+          path: gamemodes/catrp.amx

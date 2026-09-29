@@ -1,0 +1,47 @@
+[2020/2/7 - 7:31:28] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: .
+[2020/2/7 - 7:31:47] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: .
+[2020/2/7 - 7:38:32] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: .
+[2020/2/7 - 7:43:2] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 0.
+[2020/2/7 - 7:43:15] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 0.
+[2020/2/7 - 7:46:57] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 0.
+[2020/2/7 - 8:11:58] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 10.
+[2020/2/7 - 8:16:49] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 100.
+[2020/2/7 - 8:30:38] Registros: Lucas Becerra coins a  iiiii iiiii. cantidad: 100.
+[2020/2/7 - 8:30:53] Registros: Lucas Becerra quito coins a  iiiii iiiii. cantidad: 100.
+[2020/2/7 - 11:51:35] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 10.
+[2020/2/7 - 11:51:39] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 10.
+[2020/2/7 - 11:52:0] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 30.
+[2020/2/7 - 11:52:41] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 30.
+[2020/2/7 - 11:52:41] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 30.
+[2020/2/7 - 11:52:42] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 30.
+[2020/2/7 - 11:52:42] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 30.
+[2020/2/7 - 11:52:53] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: -159383552.
+[2020/2/7 - 11:52:56] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: -727379968.
+[2020/2/7 - 11:52:57] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: -727379968.
+[2020/2/7 - 11:52:59] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 100.
+[2020/2/7 - 11:53:4] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 100.
+[2020/2/7 - 11:53:11] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 100.
+[2020/2/7 - 11:53:12] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 100.
+[2020/2/7 - 11:57:50] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 100.
+[2020/2/7 - 11:57:52] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 100.
+[2020/2/7 - 11:57:53] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 100.
+[2020/2/7 - 12:4:4] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 20.
+[2020/2/7 - 12:26:46] Registros: Lucas Becerra coins a  Rodrigo Morgan. cantidad: 100.
+[2020/2/7 - 12:34:20] Registros: Lucas Becerra quito coins a  Rodrigo Morgan. cantidad: 100.
+[2020/2/8 - 0:52:50] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 100.
+[2020/2/8 - 0:53:27] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 5.
+[2020/2/8 - 0:53:34] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 5.
+[2020/2/8 - 4:27:52] Registros: Lucas Becerra coins a  iiiii iiiii. cantidad: 100.
+[2020/2/22 - 19:41:52] Registros: Lucas Buenardo coins a  Lucas Buenardo. cantidad: 1000.
+[2020/2/24 - 16:24:23] Registros: Lucas Buenardo quito coins a  Lucas Buenardo. cantidad: 950.
+[2020/3/5 - 3:29:41] Registros: Lucas Becerra coins a  Noah Rothwell. cantidad: 1000.
+[2020/3/5 - 3:29:48] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 1000.
+[2020/3/5 - 23:44:57] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 1000.
+[2020/3/5 - 23:45:5] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 1.
+[2020/3/5 - 23:45:12] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 1.
+[2021/2/28 - 13:33:45] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 10.
+[2021/2/28 - 13:34:8] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 10.
+[2021/8/5 - 19:55:9] Registros: Lucas Becerra coins a  Lucas Becerra. cantidad: 1231231.
+[2021/8/5 - 20:1:21] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 10.
+[2021/8/5 - 20:1:24] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 10.
+[2021/8/5 - 20:1:26] Registros: Lucas Becerra quito coins a  Lucas Becerra. cantidad: 10.
