@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Descargar Código
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Configurar Arquitectura i386
         run: |
@@ -26,7 +26,7 @@ jobs:
           ./pawno/pawncc gamemodes/catrp.pwn -iincludes -ipawno/include -o"gamemodes/catrp.amx" -; -(${
 
       - name: Guardar AMX Compilado
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: catrp-amx
           path: gamemodes/catrp.amx
