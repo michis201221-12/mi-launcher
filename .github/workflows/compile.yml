@@ -18,20 +18,21 @@ jobs:
         run: |
           sudo dpkg --add-architecture i386
           sudo apt-get update
-          sudo apt-get install -y libc6:i386 libstdc++6:i386
+          sudo apt-get install -y libc6:i386 libstdc++6:i386 lib32z1 wget
 
-      - name: Descargar Compilador Pawn (Linux)
+      - name: Instalar Compilador Pawn y Librerías 32-bits
         run: |
           wget https://github.com/pawn-lang/compiler/releases/download/v3.10.10/pawnc-3.10.10-linux.tar.gz
           tar -xzf pawnc-3.10.10-linux.tar.gz
           cp pawnc-3.10.10-linux/bin/pawncc pawno/pawncc
           cp pawnc-3.10.10-linux/lib/libpawnc.so pawno/libpawnc.so
-          sudo cp pawnc-3.10.10-linux/lib/libpawnc.so /usr/lib/ 2>/dev/null || true
+          sudo cp pawnc-3.10.10-linux/lib/libpawnc.so /usr/lib/i386-linux-gnu/
+          sudo cp pawnc-3.10.10-linux/lib/libpawnc.so /lib/i386-linux-gnu/
           chmod +x pawno/pawncc
+          sudo ldconfig
 
       - name: Compilar catrp.pwn
         run: |
-          export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(pwd)/pawno
           ./pawno/pawncc gamemodes/catrp.pwn -iincludes -ipawno/include -o"gamemodes/catrp.amx"
 
       - name: Guardar AMX Compilado
